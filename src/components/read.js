@@ -4,6 +4,7 @@ import Movies from './movies';
 //Class for reading Movies onto component
 class Read extends Component
 {
+    //reads in movies with title year, imbd id, type of show and poster
     state = {
         mymovies:[
             {
@@ -32,7 +33,8 @@ class Read extends Component
     };
 
     render(){
-        return(
+        return (
+            //content div
             <div>
                 <h3>Hello from read Component!</h3>
                 <Movies films={this.state.mymovies}></Movies>
